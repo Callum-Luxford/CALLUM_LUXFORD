@@ -9,27 +9,31 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>CALLUM | LUXFORD</title>
 </head>
+
 <body>
     <div class="body__wrapper"></div>
     <div class="circle"></div>
-    
+
     <div class="section__container">
         <div class="grid__container">
             <div class="grid__layout">
                 <header class="header__section">
-                    <div class="header__container">
+                    <div class="header__container sticky">
                         <div class="header__content">
-                            <h1>Callum Luxford</h1>
-                            <h2>Junior Developer & Engineer</h2>
+                            <h1><span class="auto-type"></span></h1>
+                            <h2>- Junior Developer & Engineer</h2>
                             <p>I build user friendly, engaging web apps.</p>
                             <nav class="nav__container">
                                 <ul class="nav__list">
-                                    <li><a href="#"><span>ABOUT</span></a></li>
-                                    <li><a href="#"><span>EXPERIENCE</span></a></li>
-                                    <li><a href="#"><span>PROJECTS</span></a></li>
+                                    <li><a href="#about" id="about" onclick="toggleNav()"><span>ABOUT</span></a></li>
+                                    <li><a href="#experience"><span>EXPERIENCE</span></a></li>
+                                    <li><a href="#projects"><span>PROJECTS</span></a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -46,30 +50,86 @@
 
                 <section class="main__content">
                     <section class="about__section">
-                        <div class="about__info">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ad atque magni
-                                tempore
-                                necessitatibus ipsum dignissimos provident, dicta impedit reiciendis nemo tempora
-                                voluptatem
-                                sequi vero nihil fugit modi ut qui.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore a in necessitatibus rem
-                                vel
-                                impedit tempore, veniam qui quaerat dolorem possimus sit illum architecto minus animi
-                                sed
-                                deleniti numquam voluptates?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laboriosam.</p>
+                        <div class="about__info" id="about__info">
+                            <p>Hi, I'm <span>Callum Luxford</span>, a passionate Junior Developer eager to make my mark
+                                in the tech
+                                industry. With a solid
+                                foundation in coding and a keen interest in learning new technologies, I'm always on the
+                                lookout for opportunities to
+                                grow and enhance my skills.</p>
+                            <p>Driven by a
+                                curiosity to understand how things
+                                work and a determination to create solutions that make a difference.</p>
+                            <p>Whether I'm diving into front-end design or tackling back-end challenges, I approach
+                                every project with enthusiasm and a
+                                commitment to delivering high-quality work. I'm excited to continue building my career,
+                                collaborating with talented
+                                teams, and contributing to innovative projects.</p>
+                            <p>Let's connect and create something amazing together!</p>
+
+                            <!-- <textarea class="text__area" type="text" name="" id="" cols="30" rows="10"></textarea> -->
                         </div>
                     </section>
 
                     <section class="experience__section">
-                        <div>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                        <div class="exp__cards">
+                            <ul class="exp__list">
+                                <li class="exp__list__item">
+                                    <div class="exp__card">
+                                        <div class="card__header">
+                                            <h2>2024 - PRESENT</h2>
+                                        </div>
+
+                                        <div class="card__content">
+                                            <h3 class="card__title">Junior Web Developer</h3>
+                                            <p class="card__info">Build and maintain a website for Dynamic Roofing
+                                                Solutions Ltd. Working closely with the directors to fulfill their
+                                                development needs.</p>
+                                            <ul>
+                                                <li>
+                                                    <div>HTML</div>
+                                                </li>
+                                                <li>
+                                                    <div>CSS</div>
+                                                </li>
+                                                <li>
+                                                    <div>JavaScript</div>
+                                                </li>
+                                                <li>
+                                                    <div>Google Scripts</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="exp__list__item">
+                                    <div class="exp__card">
+                                        <div class="card__header">
+                                            <h2>2024 - PRESENT</h2>
+                                        </div>
+
+                                        <div class="card__content">
+                                            <h3 class="card__title">Junior Web Developer</h3>
+                                            <p class="card__info">Build and maintain a website for Dynamic Roofing
+                                                Solutions Ltd. Working closely with the directors to fulfill their
+                                                development needs.</p>
+                                            <ul>
+                                                <li>
+                                                    <div>HTML</div>
+                                                </li>
+                                                <li>
+                                                    <div>CSS</div>
+                                                </li>
+                                                <li>
+                                                    <div>JavaScript</div>
+                                                </li>
+                                                <li>
+                                                    <div>Google Scripts</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </section>
@@ -80,6 +140,9 @@
     </div>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/caret.js"></script>
+    <script src="assets/js/commands.js"></script>
+    <script src="assets/js/terminal.js"></script>
 </body>
 
 </html>
