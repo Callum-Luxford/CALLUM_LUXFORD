@@ -172,6 +172,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    border: 1px solid #00d200;
+    border-radius: 10px;
+    padding: 2rem;
 }
 
 .header__icons ul li img {
@@ -247,7 +250,7 @@ body {
 
 /* -------------------------- End Header section ------------------------ */
 
-/* --------------------------- Main Content -------------------------- */ 
+/* --------------------------- Main Content -------------------------- */
 .main__content {
     border: 1px solid #00d200;
     border-radius: 10px;
@@ -299,6 +302,7 @@ body {
     color: var(--text-primary-color);
     font-size: var(--fs-small);
 }
+
 .card__content {
     display: grid;
     gap: 1rem;
@@ -334,7 +338,8 @@ body {
     filter: blur(3px);
     opacity: .5;
 }
-.exp__list .exp__card:hover{
+
+.exp__list .exp__card:hover {
     filter: blur(0);
     opacity: 1;
 }
@@ -357,5 +362,3 @@ textarea:focus {
 }
 
 textarea { resize: none; } */
-
-
