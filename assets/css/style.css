@@ -107,7 +107,7 @@ html {
 body {
     font-family: var(--ff-primary);
     /* background-color: var(--primary-color); */
-    background-image: url(/assets/images/wp4615518-terminal-wallpapers.jpg);
+    background-image: url(../images/wp4615518-terminal-wallpapers.jpg);
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
