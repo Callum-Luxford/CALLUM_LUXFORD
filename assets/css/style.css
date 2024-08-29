@@ -96,14 +96,19 @@ svg {
 
 /* ----------------------------- General Styling ------------------------- */
 
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 body {
     font-family: var(--ff-primary);
     /* background-color: var(--primary-color); */
     background-image: url(/assets/images/wp4615518-terminal-wallpapers.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -118,9 +123,10 @@ body {
     position: absolute;
     opacity: .9;
     z-index: -101;
+    position: fixed;
 }
 
-.circle {
+/* .circle {
     height: 250px;
     width: 250px;
     background: radial-gradient(circle, rgba(0, 210, 0, .1) 0%, rgba(255, 255, 255, 0) 70%);
@@ -128,8 +134,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
+    overflow: hidden;
     z-index: -100;
-}
+} */
 
 
 .sr-only {
@@ -146,6 +153,7 @@ body {
 .grid__container {
     display: grid;
     min-height: var(--min-height);
+    max-height: var(--min-height);
     padding: 5rem 0rem;
 }
 
@@ -183,11 +191,43 @@ body {
 
     .main__content {
         grid-column: 1;
+        margin-bottom: 5rem;
     }
 
     .header__icons ul {
         margin-top: 2rem;
         justify-content: flex-end;
+    }
+
+    body {
+        overflow: unset;
+    }
+
+    ::-webkit-scrollbar {
+        width: .5rem;
+        background-color: var(--primary-color);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--text-primary-color);
+        border-radius: 5px;
+        border: 5px solid var(--text-primary-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        /* margin-block: 2rem; */
+        border-radius: 100vw;
+    }
+
+}
+
+@media (width > 1024px) {
+    .main__content {
+        border: 1px solid #00d200;
+        border-radius: 10px;
+        padding: 2rem;
+        height: 90dvh;
+        overflow-y: auto;
     }
 }
 
@@ -279,6 +319,33 @@ body {
     border: 1px solid #00d200;
     border-radius: 10px;
     padding: 2rem;
+    /* height: 90dvh; */
+    overflow-y: auto;
+}
+
+.blur {
+    filter: blur(3px);
+    opacity: .99;
+}
+
+.scroll__container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-primary-color);
+    border-radius: 5px;
+    border: 5px solid var(--text-primary-color);
+}
+
+::-webkit-scrollbar-track {
+    /* margin-block: 2rem; */
+    border-radius: 100vw;
 }
 
 /* About Section */
@@ -361,7 +428,7 @@ body {
 
 .exp__list:hover .exp__card {
     filter: blur(3px);
-    opacity: .5;
+    opacity: .99;
 }
 
 .exp__list .exp__card:hover {

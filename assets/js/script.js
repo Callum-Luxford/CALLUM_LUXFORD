@@ -28,7 +28,7 @@ const scrollRevealOption = {
   origin: "right",
   duration: 500,
 };
-ScrollReveal().reveal(".main__content", {
+ScrollReveal().reveal(".about__info, .exp__list",{
   ...scrollRevealOption,
   delay: 250,
 });
@@ -44,27 +44,8 @@ ScrollReveal().reveal(".header__icons", {
 });
 // End Scroll reveal
 
-
 // 
-const aboutInfo = document.getElementById("about__info");
-
-// about.addEventListener("click", (e) => {
-//   aboutInfo.style.visibility = "visible";
-//   ScrollReveal().reveal(aboutInfo,{
-//     ...scrollRevealOption,
-//     delay: 100,
-//     origin: "top",
-//   });
-// });
-
-// function toggleNav(){
-//   let x = aboutInfo;
-//   if(x.style.visibility === "hidden"){
-//     x.style.visibility = "visible";
-//   } else {
-//     x.style.visibility = "hidden";
-//   }
-// };
+// const aboutInfo = document.getElementById("about__info");
 
 // $('#about').click(function(){
 //   $('.about__info').slideToggle(500, "linear");
