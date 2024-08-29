@@ -350,23 +350,40 @@ body::before {
     border-radius: 5px;
 }
 
-.exp__list:hover .exp__card {
-    filter: blur(3px);
-    opacity: .99;
-}
-
-.exp__list .exp__card:hover {
-    filter: blur(0);
-    opacity: 1;
-}
-
 .exp__card:hover {
     background-color: #00d20013;
     border: -1px solid var(--text-primary-color);
 }
 
+.exp__list .exp__card {
+    filter: blur(3px);
+    opacity: .99;
+}
+
+.exp__card:hover {
+    filter: blur(0);
+    opacity: 1;
+}
+
 .exp__card {
     background-color: #00d20013;
+}
+
+@media (width < 1024px) {
+    .exp__list:hover .exp__card {
+        filter: blur(3px);
+        opacity: .99;
+    }
+
+    .exp__list .exp__card:hover {
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    .exp__list .exp__card {
+        filter: blur(0);
+        opacity: .99;
+    }
 }
 
 .card__header {
