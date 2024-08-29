@@ -105,14 +105,18 @@ html {
     overflow-y: auto;
 }
 
-body {
+body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
     font-family: var(--ff-primary);
     background-image: url(../images/wp4615518-terminal-wallpapers.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     overflow-x: hidden;
+    z-index: -102;
 }
 
 .body__wrapper {
