@@ -286,7 +286,7 @@ body {
     overflow: hidden;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: .5rem;
 }
 
@@ -299,7 +299,7 @@ body {
 ::-webkit-scrollbar-track {
     /* margin-block: 2rem; */
     border-radius: 100vw;
-}
+} */
 
 /* About Section */
 .about__section {
@@ -428,7 +428,7 @@ body {
         overflow: auto;
     }
 
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         width: .5rem;
         background-color: var(--primary-color);
     }
@@ -442,7 +442,7 @@ body {
     ::-webkit-scrollbar-track {
         /* margin-block: 2rem; */
         /* border-radius: 100vw; */
-    }
+    } */
 
 }
 
