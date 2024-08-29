@@ -147,14 +147,14 @@ body {
 
 .section__container {
     max-width: var(--max-width);
-    /* min-height: var(--min-height); */
+    min-height: var(--min-height);
     margin: auto;
     /* padding: 4rem 1rem; */
 }
 
 .grid__container {
     display: grid;
-    /* min-height: var(--min-height); */
+    min-height: var(--min-height);
     max-height: var(--min-height);
     padding: 5rem 0rem;
 }
