@@ -420,30 +420,6 @@ body {
         border: -1px solid var(--text-primary-color);
     }
 
-    body {
-        font-family: var(--ff-primary);
-        /* background-color: var(--primary-color); */
-        background-image: url(../images/wp4615518-terminal-wallpapers.jpg);
-        background-position: center;
-        background-repeat: repeat;
-        background-size: cover;
-        /* overflow-y: hidden; */
-        overflow-x: hidden;
-    }
-
-    .body__wrapper::before {
-        content: "";
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--primary-color);
-        position: absolute;
-        opacity: .9;
-        z-index: -101;
-        position: fixed;
-    }
 }
 
 @media (width > 1024px) {
