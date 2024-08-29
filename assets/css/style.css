@@ -351,11 +351,6 @@ body {
     border-radius: 5px;
 }
 
-/* .exp__card:hover {
-    background-color: #00d20013;
-    border: -1px solid var(--text-primary-color);
-} */
-
 .exp__list:hover .exp__card {
     filter: blur(3px);
     opacity: .99;
@@ -367,6 +362,11 @@ body {
 }
 
 .exp__card:hover {
+    background-color: #00d20013;
+    border: -1px solid var(--text-primary-color);
+}
+
+.exp__card:nth-of-type(1) {
     background-color: #00d20013;
     border: -1px solid var(--text-primary-color);
 }
