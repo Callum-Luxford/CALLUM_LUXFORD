@@ -107,17 +107,15 @@ html {
 
 body {
     font-family: var(--ff-primary);
-    /* background-color: var(--primary-color); */
     background-image: url(../images/wp4615518-terminal-wallpapers.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* overflow-y: hidden; */
     overflow-x: hidden;
 }
 
-.body__wrapper::before {
+.body__wrapper {
     content: "";
     display: block;
     top: 0;
@@ -164,9 +162,7 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    /* padding: 0 4rem; */
     padding: 0rem 2rem;
-
     overflow-x: hidden;
 }
 
@@ -225,7 +221,6 @@ body {
     font-size: var(--fs-m-medium);
     font-weight: 500;
     color: var(--text-primary-color);
-    /* margin-top: -.3rem; */
     margin-top: 1.5rem;
 }
 
