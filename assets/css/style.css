@@ -350,7 +350,7 @@ body::before {
     border-radius: 5px;
 }
 
-.exp__card:hover {
+/* .exp__card:hover {
     background-color: #00d20013;
     border: -1px solid var(--text-primary-color);
 }
@@ -363,7 +363,7 @@ body::before {
 .exp__card:hover {
     filter: blur(0);
     opacity: 1;
-}
+} */
 
 .exp__card {
     background-color: #00d20013;
@@ -385,7 +385,7 @@ body::before {
         opacity: .1;
     } */
 
-    .exp__list:hover .exp__card {
+    /* .exp__list:hover .exp__card {
         filter: blur(0);
         opacity: .99;
     }
@@ -398,7 +398,7 @@ body::before {
     .exp__list .exp__card {
         filter: blur(0);
         opacity: 1;
-    }
+    } */
 
 
 }
@@ -480,6 +480,21 @@ body::before {
         /* padding: 2rem; */
         height: 90dvh;
         overflow-y: auto;
+    }
+
+    .exp__card:hover {
+        background-color: #00d20013;
+        border: -1px solid var(--text-primary-color);
+    }
+
+    .exp__list .exp__card {
+        filter: blur(3px);
+        opacity: .99;
+    }
+
+    .exp__card:hover {
+        filter: blur(0);
+        opacity: 1;
     }
 
     body {
