@@ -356,6 +356,21 @@ body {
     border: -1px solid var(--text-primary-color);
 } */
 
+.exp__list:hover .exp__card {
+    filter: blur(3px);
+    opacity: .99;
+}
+
+.exp__list .exp__card:hover {
+    filter: blur(0);
+    opacity: 1;
+}
+
+.exp__card:hover {
+    background-color: #00d20013;
+    border: -1px solid var(--text-primary-color);
+}
+
 .card__header {
     color: var(--text-primary-color);
     font-size: var(--fs-small);
@@ -403,21 +418,6 @@ body {
 
     .header__content h1 {
         font-size: var(--fs-x-large);
-    }
-
-    .exp__list:hover .exp__card {
-        filter: blur(3px);
-        opacity: .99;
-    }
-
-    .exp__list .exp__card:hover {
-        filter: blur(0);
-        opacity: 1;
-    }
-
-    .exp__card:hover {
-        background-color: #00d20013;
-        border: -1px solid var(--text-primary-color);
     }
 
 }
