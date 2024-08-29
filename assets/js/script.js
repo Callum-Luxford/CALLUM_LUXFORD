@@ -1,10 +1,10 @@
 // Mouse circle
-$(document).mousemove(function (e) {
-  $(".circle").css({
-    left: e.pageX - 125,
-    top: e.pageY - 125,
-  });
-});
+// $(document).mousemove(function (e) {
+//   $(".circle").css({
+//     left: e.pageX - 125,
+//     top: e.pageY - 125,
+//   });
+// });
 // End Mouse circle
 
 // Type Writer
@@ -43,12 +43,4 @@ ScrollReveal().reveal(".header__icons", {
   origin: "bottom",
 });
 // End Scroll reveal
-
-// 
-// const aboutInfo = document.getElementById("about__info");
-
-// $('#about').click(function(){
-//   $('.about__info').slideToggle(500, "linear");
-//   aboutInfo.style.display = "grid";
-// })
 
