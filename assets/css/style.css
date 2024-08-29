@@ -37,7 +37,7 @@
     --z-index-wrapper: ;
     --z-index-overaly: ;
 
-    --filter-hover-color: brightness(0) saturate(100%) invert(90%) sepia(19%) saturate(807%) hue-rotate(58deg) brightness(101%) contrast(101%);;
+    --filter-hover-color: brightness(0) saturate(100%) invert(90%) sepia(19%) saturate(807%) hue-rotate(58deg) brightness(101%) contrast(101%);
 }
 
 /* Box sizing rules */
@@ -401,7 +401,7 @@ body {
 
     .header__section {
         grid-column: 1;
-        float: left;
+        /* float: left; */
     }
 
     .main__content {
