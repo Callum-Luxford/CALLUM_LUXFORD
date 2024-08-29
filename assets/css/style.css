@@ -37,8 +37,7 @@
     --z-index-wrapper: ;
     --z-index-overaly: ;
 
-    --filter-hover-color: brightness(0) saturate(100%) invert(90%) sepia(19%) saturate(807%) hue-rotate(58deg) brightness(101%) contrast(101%);
-    ;
+    --filter-hover-color: brightness(0) saturate(100%) invert(90%) sepia(19%) saturate(807%) hue-rotate(58deg) brightness(101%) contrast(101%);;
 }
 
 /* Box sizing rules */
@@ -398,8 +397,6 @@ body {
         grid-template-columns: repeat(1, 1fr);
         overflow-x: hidden;
         padding: 0rem 2rem;
-
-        overflow: auto;
     }
 
     .header__section {
@@ -419,13 +416,6 @@ body {
 
     body {
         overflow: unset;
-    }
-
-    body,
-    html,
-    .grid__container,
-    .grid__layout {
-        overflow: auto;
     }
 
     ::-webkit-scrollbar {
