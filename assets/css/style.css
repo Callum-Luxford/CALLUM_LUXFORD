@@ -37,7 +37,8 @@
     --z-index-wrapper: ;
     --z-index-overaly: ;
 
-    --filter-hover-color: brightness(0) saturate(100%) invert(90%) sepia(19%) saturate(807%) hue-rotate(58deg) brightness(101%) contrast(101%);;
+    --filter-hover-color: brightness(0) saturate(100%) invert(90%) sepia(19%) saturate(807%) hue-rotate(58deg) brightness(101%) contrast(101%);
+    ;
 }
 
 /* Box sizing rules */
@@ -111,7 +112,7 @@ body {
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     overflow-x: hidden;
 }
 
@@ -394,10 +395,14 @@ body {
 
 @media (width > 1024px) {
     .grid__layout {
-            grid-template-columns: repeat(2, 1fr);
-            overflow-x: hidden;
-            padding: 0 4rem;
-        }
+        grid-template-columns: repeat(2, 1fr);
+        overflow-x: hidden;
+        padding: 0 4rem;
+    }
+
+    body {
+        overflow-y: hidden;
+    }
 }
 
 @media (width < 1024px) {
