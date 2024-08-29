@@ -31,7 +31,7 @@
     --btn-secondary-color: ;
 
     --max-width: 1200px;
-    /* --min-height: 100dvh; */
+    --min-height: 100dvh;
     --gradient: ;
 
     --z-index-wrapper: ;
@@ -147,7 +147,7 @@ body {
 
 .section__container {
     max-width: var(--max-width);
-    /* min-height: var(--min-height); */
+    min-height: var(--min-height);
     margin: auto;
     /* padding: 4rem 1rem; */
 }
@@ -155,7 +155,7 @@ body {
 .grid__container {
     display: grid;
     min-height: var(--min-height);
-    /* max-height: var(--min-height); */
+    max-height: var(--min-height);
     padding: 5rem 0rem;
 }
 
@@ -431,7 +431,7 @@ body {
 
     ::-webkit-scrollbar-track {
         /* margin-block: 2rem; */
-        /* border-radius: 100vw; */
+        border-radius: 100vw;
     }
 
 }
