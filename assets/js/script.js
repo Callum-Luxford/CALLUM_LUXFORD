@@ -7,6 +7,21 @@
 // });
 // End Mouse circle
 
+// Type Writer
+var typed = new Typed(".auto-type", {
+  strings: [
+    "",
+    "",
+    "Hello user.. ^2000",
+    "I'm Callum.. ^2000",
+    "Welcome to my Portfolio :) ",
+  ],
+  typeSpeed: 50,
+  backSpeed: 75,
+  loop: false,
+});
+// End Type Writer
+
 // Scroll reveal
 const scrollRevealOption = {
   distance: "25px",
@@ -28,20 +43,4 @@ ScrollReveal().reveal(".header__icons", {
   origin: "bottom",
 });
 // End Scroll reveal
-
-// Type Writer
-var typed = new Typed(".auto-type", {
-  strings: [
-    "",
-    "",
-    "Hello user.. ^2000",
-    "I'm Callum.. ^2000",
-    "Welcome to my Portfolio :) ",
-  ],
-  typeSpeed: 50,
-  backSpeed: 75,
-  loop: false,
-});
-// End Type Writer
-
 
