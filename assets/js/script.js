@@ -83,7 +83,8 @@ const scrollRevealOption = {
   origin: "right",
   duration: 500,
 };
-ScrollReveal().reveal(".about__info, .exp__list", {
+
+ScrollReveal().reveal(".about__section, .experience__section", {
   ...scrollRevealOption,
   delay: 250,
 });
