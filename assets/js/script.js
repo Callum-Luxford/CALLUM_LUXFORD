@@ -7,6 +7,35 @@
 // });
 // End Mouse circle
 
+// Card content blur
+const cards = document.querySelectorAll(".exp__card");
+
+// blur all cards except the first one
+cards.forEach((card, index) => {
+  if (index !== 0) {
+    card.classList.add("blurred");
+  }
+});
+
+// unblur the card that is hovered and blur the others
+cards.forEach((card) => {
+  card.addEventListener("mouseover", () => {
+    cards.forEach((c) => c.classList.add("blurred"));
+    card.classList.remove("blurred");
+  });
+
+  card.addEventListener("mouseout", () => {
+    cards.forEach((c, index) => {
+      if (index !== 0) {
+        c.classList.add("blurred");
+      } else {
+        c.classList.remove("blurred");
+      }
+    });
+  });
+});
+// End Card content blur
+
 // Type Writer
 var typed = new Typed(".auto-type", {
   strings: [
@@ -28,7 +57,7 @@ const scrollRevealOption = {
   origin: "right",
   duration: 500,
 };
-ScrollReveal().reveal(".about__info, .exp__list",{
+ScrollReveal().reveal(".about__info, .exp__list", {
   ...scrollRevealOption,
   delay: 250,
 });
@@ -43,4 +72,3 @@ ScrollReveal().reveal(".header__icons", {
   origin: "bottom",
 });
 // End Scroll reveal
-
