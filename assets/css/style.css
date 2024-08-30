@@ -354,8 +354,18 @@ body::before {
     filter: blur(3px);
 }
 
+.box__shadow {
+    box-shadow: 0px 0px 5px #00ff00;
+}
+
 .exp__card {
     background-color: #00d20013;
+    /* box-shadow: 0px 0px 5px #00ff00; */
+}
+
+.exp__card:hover {
+    background-color: #00d20013;
+    border: -1px solid var(--text-primary-color);
 }
 
 .card__header {

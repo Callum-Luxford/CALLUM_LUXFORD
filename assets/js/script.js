@@ -7,9 +7,9 @@
 // });
 // End Mouse circle
 
-// Card content blur
+// Card content blur and box shadow
 const cards = document.querySelectorAll(".exp__card");
-const cardsList = document.querySelectorAll(".exp__list")
+const cardsList = document.querySelectorAll(".exp__list");
 
 // blur all cards except the first one
 cards.forEach((card, index) => {
@@ -35,7 +35,32 @@ cards.forEach((card) => {
     });
   });
 });
-// End Card content blur
+
+// box shadow
+cards.forEach(function (card, index) {
+  if (index === 0)
+  card.classList.add("box__shadow");
+});
+
+cards.forEach(function (card) {
+  card.addEventListener("mouseover", function () {
+    cards.forEach(function (e) {
+      e.classList.remove("box__shadow");
+    });
+    card.classList.add("box__shadow");
+  });
+
+  card.addEventListener("mouseout", () => {
+    cards.forEach((c, index) => {
+      if (index !== 0) {
+        c.classList.remove("box__shadow");
+      } else {
+        c.classList.add("box__shadow")
+      }
+    })
+  })
+});
+// End Card content blur and box shadow
 
 // Type Writer
 var typed = new Typed(".auto-type", {
