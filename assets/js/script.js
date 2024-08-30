@@ -9,6 +9,7 @@
 
 // Card content blur
 const cards = document.querySelectorAll(".exp__card");
+const cardsList = document.querySelectorAll(".exp__list")
 
 // blur all cards except the first one
 cards.forEach((card, index) => {

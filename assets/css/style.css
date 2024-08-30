@@ -456,9 +456,6 @@ body::before {
         filter: blur(0) !important;
     } */
 
-    .blurred {
-        filter: blur(3px);
-    }
 
     body {
         overflow: hidden;
