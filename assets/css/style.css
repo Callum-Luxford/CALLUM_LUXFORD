@@ -155,7 +155,7 @@ body::before {
     /* padding: 4rem 1rem; */
 }
 
-.section__title {
+.section__title span {
     color: var(--text-primary-color);
     font-size: var(--fs-large);
     font-weight: 600;
