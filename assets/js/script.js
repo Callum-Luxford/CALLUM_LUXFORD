@@ -38,8 +38,7 @@ cards.forEach((card) => {
 
 // box shadow
 cards.forEach(function (card, index) {
-  if (index === 0)
-  card.classList.add("box__shadow");
+  if (index === 0) card.classList.add("box__shadow");
 });
 
 cards.forEach(function (card) {
@@ -55,12 +54,18 @@ cards.forEach(function (card) {
       if (index !== 0) {
         c.classList.remove("box__shadow");
       } else {
-        c.classList.add("box__shadow")
+        c.classList.add("box__shadow");
       }
-    })
-  })
+    });
+  });
 });
 // End Card content blur and box shadow
+
+// Card hover plane
+const pCards = document.querySelectorAll(".project__card");
+const plane = document.querySelectorAll(".plane")
+
+
 
 // Type Writer
 var typed = new Typed(".auto-type", {
@@ -100,6 +105,4 @@ ScrollReveal().reveal(".header__icons", {
 });
 // End Scroll reveal
 
-
-
-// Swiper 
+// Swiper
