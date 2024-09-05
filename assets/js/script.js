@@ -99,3 +99,7 @@ ScrollReveal().reveal(".header__icons", {
   origin: "bottom",
 });
 // End Scroll reveal
+
+
+
+// Swiper 
