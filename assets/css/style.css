@@ -442,6 +442,7 @@ body::before {
     color: var(--text-secondary-color);
     font-size: var(--fs-m-small);
     font-weight: 300;
+    /* text-align: justify; */
 }
 
 .card__content ul {
@@ -625,10 +626,6 @@ body::before {
     }
 
 }
-
-
-
-
 
 
 
