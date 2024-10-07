@@ -77,14 +77,18 @@ project2.addEventListener("click", () => {
 });
 let project3 = document.getElementById("project__3");
 project3.addEventListener("click", () => {
-  window.open("https://github.com/Callum-Luxford/PYTHON-PONG", "_blank");
+  window.open("https://callum-luxford.github.io/PORTFOLIO/#", "_blank");
 });
 let project4 = document.getElementById("project__4");
 project4.addEventListener("click", () => {
-  window.open("https://github.com/Callum-Luxford/PYTHON-SNAKE", "_blank");
+  window.open("https://github.com/Callum-Luxford/PYTHON-PONG", "_blank");
 });
 let project5 = document.getElementById("project__5");
 project5.addEventListener("click", () => {
+  window.open("https://github.com/Callum-Luxford/PYTHON-SNAKE", "_blank");
+});
+let project6 = document.getElementById("project__6");
+project6.addEventListener("click", () => {
   window.open(
     "https://github.com/Callum-Luxford/PYTHON-POMODORO/tree/main",
     "_blank"
