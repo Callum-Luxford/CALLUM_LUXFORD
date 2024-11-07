@@ -69,11 +69,11 @@ const plane = document.querySelectorAll(".plane");
 // Card project links
 let project1 = document.getElementById("project__1");
 project1.addEventListener("click", () => {
-  window.open("https://manafinder.onrender.com", "_blank");
+  window.open("https://bitebybite.onrender.com/", "_blank");
 });
 let project2 = document.getElementById("project__2");
 project2.addEventListener("click", () => {
-  window.open("https://manablog.onrender.com/", "_blank");
+  window.open("https://manafinder.onrender.com", "_blank");
 });
 let project3 = document.getElementById("project__3");
 project3.addEventListener("click", () => {
